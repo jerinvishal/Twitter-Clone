@@ -1,4 +1,4 @@
-import daisyui from "daisyui";
+import 'daisyui';
 import daisyUIThemes from "daisyui/src/theming/themes";
 /** @type {import('tailwindcss').Config} */
 export default {
