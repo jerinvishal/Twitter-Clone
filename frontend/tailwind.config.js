@@ -1,23 +1,23 @@
-import 'daisyui';
-import daisyUIThemes from "daisyui/src/theming/themes";
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"], // Ensure paths are correct
 	theme: {
-		extend: {},
+	  extend: {},
 	},
-	plugins: [daisyui],
-
+	plugins: [
+	  require('daisyui'), // This is the correct way to add daisyUI
+	],
+  
 	daisyui: {
-		themes: [
-			"light",
-			{
-				black: {
-					...daisyUIThemes["black"],
-					primary: "rgb(29, 155, 240)",
-					secondary: "rgb(24, 24, 24)",
-				},
-			},
-		],
+	  themes: [
+		"light",
+		{
+		  black: {
+			primary: "rgb(29, 155, 240)",
+			secondary: "rgb(24, 24, 24)",
+		  },
+		},
+	  ],
 	},
-};
+  };
+  
