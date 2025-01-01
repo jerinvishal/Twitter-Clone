@@ -4,6 +4,7 @@
   "private": true,
   "homepage": ".",
   "dependencies": {
+    "@tanstack/react-query": "^5.62.11",
     "daisyui": "^3.0.0",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.1.1",
